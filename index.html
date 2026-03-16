@@ -40,78 +40,78 @@ const AuditPresentation = () => {
       icon: <Activity className="w-8 h-8 text-blue-400" />,
       title: 'Executive Summary: Traffic Analysis',
       items: [
-        { label: 'Organic Traffic', text: 'Significant drop compared to previous periods. Urgent recovery required.', icon: <TrendingDown className="text-red-400" /> },
-        { label: 'Backlink Authority', text: 'Low-quality profile (DA 0.1); lacks high-authority domain referrals.', icon: <ShieldCheck className="text-orange-400" /> },
-        { label: 'Search Intent', text: 'High-value transactional keywords are currently non-indexed or low-ranking.', icon: <Target className="text-blue-400" /> },
-        { label: 'Competitive Edge', text: 'Limited search visibility vs competitors in the organic A2 Ghee & Oils space.', icon: <AlertCircle className="text-red-400" /> }
+        { label: 'Traffic Performance', text: 'Organic traffic has dropped significantly compared to previous performance periods.', icon: <TrendingDown className="text-red-400" /> },
+        { label: 'Backlink Profile', text: 'Profile is not strong, indicating a critical need for high-quality, authoritative links.', icon: <ShieldCheck className="text-orange-400" /> },
+        { label: 'Keyword Strategy', text: 'Almost no significant or high-value keywords are being targeted currently.', icon: <Target className="text-blue-400" /> },
+        { label: 'Competitive Authority', text: 'Very low Domain Authority (0.1) affecting the ability to compete in SERP.', icon: <AlertCircle className="text-red-400" /> }
       ]
     },
     {
       type: 'metrics',
-      title: 'Current Ecosystem: Core Metrics',
+      title: 'Current Ecosystem: Domain Metrics',
       metrics: [
         { label: 'Domain Authority', value: '0.1', color: 'bg-red-500/10 text-red-400 border-red-500/20' },
-        { label: 'Monthly Traffic', value: '490', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
+        { label: 'Current Traffic', value: '490', color: 'bg-blue-500/10 text-blue-400 border-blue-500/20' },
         { label: 'Organic Keywords', value: '149', color: 'bg-purple-500/10 text-purple-400 border-purple-500/20' },
         { label: 'Total Backlinks', value: '244', color: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' }
       ],
       speed: [
-        { label: 'Mobile Performance', value: 38, status: 'Critical', time: '5.2s FCP' },
-        { label: 'Desktop Performance', value: 61, status: 'Sub-Optimal', time: '2.1s FCP' }
+        { label: 'Mobile Speed Score', value: 38, status: 'Critical', time: '5.2s FCP' },
+        { label: 'Desktop Speed Score', value: 61, status: 'Needs Improvement', time: '2.1s FCP' }
       ]
     },
     {
       type: 'table',
-      title: 'High-Value Keyword Opportunity',
-      description: 'The following critical business keywords have no presence in the Top 50 results.',
-      headers: ['Priority Keyword', 'Current Rank', 'Search Volume', 'Priority'],
+      title: 'Current Ecosystem: Target Keywords',
+      description: 'Identifying and targeting relevant keywords is crucial for increasing visibility and reach.',
+      headers: ['Keywords', 'Ranking', 'Search Volume', 'Priority'],
       rows: [
-        ['Multigrain Atta', 'Not in Top 50', 'High', 'Critical'],
-        ['Bilona Method Ghee', 'Not in Top 50', 'Medium-High', 'Critical'],
-        ['Natural Cooking Oil India', 'Not in Top 50', 'High', 'High'],
-        ['Best Organic Spices', 'Not in Top 50', 'High', 'Medium'],
-        ['Cold Pressed Mustard Oil', 'Not in Top 50', 'High', 'High']
+        ['Multigrain Atta', 'Not in 50', 'High', 'Critical'],
+        ['Bilona Method Ghee', 'Not in 50', 'High', 'Critical'],
+        ['Natural Cooking Oil India', 'Not in 50', 'High', 'High'],
+        ['Best Organic Spices', 'Not in 50', 'Medium', 'Medium'],
+        ['Cold Pressed Mustard Oil', 'Not in 50', 'High', 'High']
       ]
     },
     {
       type: 'swot',
       title: 'SEO SWOT Analysis',
       grid: [
-        { title: 'Strengths', items: ['Existing backlink count (244)', 'Niche product portfolio', 'Desktop speed base (61)'], color: 'border-emerald-500/30 bg-emerald-500/5 text-emerald-400' },
-        { title: 'Weaknesses', items: ['Critical Mobile speed (38)', 'Extremely low DA (0.1)', 'Missing breadcrumbs'], color: 'border-red-500/30 bg-red-500/5 text-red-400' },
-        { title: 'Opportunities', items: ['Informational blog targeting', 'Local SEO for organic foods', 'E-E-A-T score optimization'], color: 'border-blue-500/30 bg-blue-500/5 text-blue-400' },
-        { title: 'Threats', items: ['Competitor authority dominance', 'Algorithm updates', 'High bounce rates on mobile'], color: 'border-amber-500/30 bg-amber-500/5 text-amber-400' }
+        { title: 'Strengths', items: ['Existing backlink count (244)', 'Niche focus (Organic Foods)', 'Reasonable Desktop Speed (61)'], color: 'border-emerald-500/30 bg-emerald-500/5 text-emerald-400' },
+        { title: 'Weaknesses', items: ['Critical Mobile Speed (38)', 'Low Domain Authority (0.1)', 'Unoptimized Meta Tags'], color: 'border-red-500/30 bg-red-500/5 text-red-400' },
+        { title: 'Opportunities', items: ['Breadcrumb Implementation', 'Schema/Rich Snippets', 'Informational Content Strategy'], color: 'border-blue-500/30 bg-blue-500/5 text-blue-400' },
+        { title: 'Threats', items: ['Significant Traffic Drop', 'Competitor DA Dominance', 'Mobile UX Bounce Rate'], color: 'border-amber-500/30 bg-amber-500/5 text-amber-400' }
       ]
     },
     {
       type: 'tech',
-      title: 'Technical Fixes: Phase 1',
+      title: 'Technical Observations & Fixes',
       sections: [
         {
-          heading: 'Metadata Architecture',
-          issue: 'Meta titles and descriptions are either missing or generic.',
-          rec: 'Revise all product titles (50-60 chars) to include primary keywords + USP.'
+          heading: 'Meta Tag Optimization',
+          issue: 'Current Meta titles and descriptions are not optimized for keywords or length.',
+          rec: 'Optimize Meta titles (50-60 char) and Meta descriptions (150-160 char).'
         },
         {
-          heading: 'Breadcrumb Navigation',
-          issue: 'Missing path indicators on product and collection pages.',
-          rec: 'Enable Breadcrumbs: Home > Category > Product. Improves indexing efficiency.'
+          heading: 'Breadcrumb Missing',
+          issue: 'Product pages lack breadcrumb structure, weakening navigation and SEO hierarchy.',
+          rec: 'Implement: Home >> Category >> Product Name for improved crawler flow.'
         },
         {
-          heading: 'Schema Markup',
-          issue: 'Lack of Product and Review Structured Data.',
-          rec: 'Implement JSON-LD Schema to capture Rich Snippets in SERP.'
+          heading: 'Core Web Vitals',
+          issue: 'Mobile score is 38. High LCP and FCP affecting rankings.',
+          rec: 'Optimize asset delivery, compression, and server response times for Mobile.'
         }
       ]
     },
     {
       type: 'content-audit',
-      title: 'E-E-A-T & Content Strategy',
-      analysis: 'Current Content Score: 4.8/10. Content is present but lacks SEO-centric formatting.',
+      title: 'Content Analysis: Myveltix Benchmarks',
+      analysis: 'The Content Score is 4.8 out of 10. Content is present but lacks SEO structural integrity.',
       points: [
-        'Blogs lack optimized H1-H3 header hierarchies.',
-        'Low internal linking density between blogs and relevant product pages.',
-        'Missed opportunity in informational content (e.g., "Benefits of Bilona Ghee").'
+        'Blogs lack proper H1-H3 header hierarchies.',
+        'Internal linking opportunities are currently missed across news sections.',
+        'Overall strategy lacks a clear SEO approach to drive informational traffic.'
       ]
     }
   ];
